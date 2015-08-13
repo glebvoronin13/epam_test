@@ -1,0 +1,211 @@
+/* BIG */
+@media (min-width: 1300px) {
+  .s-s {
+    display: none !important;
+  }
+  .s-m {
+    display: none !important;
+  }
+  .h-l {
+    display: none !important;
+  }
+}
+@media (min-width: 1040px) and (max-width: 1299px) {
+  .s-s {
+    display: none !important;
+  }
+  .s-m {
+    display: none !important;
+  }
+  .h-l {
+    display: none !important;
+  }
+  .container {
+    max-width: 990px;
+  }
+}
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1039px) {
+  .s-s {
+    display: none !important;
+  }
+  .s-l {
+    display: none !important ;
+  }
+  .h-m {
+    display: none !important;
+  }
+  .container {
+    max-width: 735px;
+  }
+  .search-block {
+    width:31%;
+  }
+}
+/* PHONES*/
+@media (max-width: 767px) {
+  
+  .s-m {
+    display: none !important;
+  }
+  .s-l {
+    display: none !important;
+  }
+  .h-s {
+    display: none !important;
+  }
+  .container {
+    max-width: 225px;
+  }
+  .navbar {
+  height: 40px;
+  width: 100%;
+   > .container {
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  .logo-block {
+      font-size: 18px;
+      min-width: 140px;
+  }
+  .nav-mobile {
+    float: right;
+    height: 40px;
+    a {
+      margin-left: 10px;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  div.mob-sr-field > form > input.search {
+      max-width: 225px;
+  }
+  .foot-col { 
+      width: 100%;
+  }
+  ul.social li.soc-item {
+      width: 16.6%;
+  }
+  .social-col {
+    height:90px
+  }
+  @media (min-width: 530px) {
+    .container {
+      max-width: 480px;
+    }
+    div.mob-sr-field > form > input.search {
+      max-width: 480px;
+    }
+    .foot-col { 
+      width: 50%;
+    }
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    div.search-block > form > input.search {
+        background: url(../img/search@2x.png) #fff no-repeat center right;
+        background-size: 11px 12px;
+    }
+
+    div.mob-sr-field > form > input.search {
+        background: url(../img/search@2x.png) #fff no-repeat center right;
+        background-size: 11px 12px;
+    }
+
+    .twitter {
+      &:before{
+        background: url('../img/Twitter@2x.png');
+        background-size: 36px 36px;
+      }
+      &:hover:before{
+        background: url('../img/Twitter_Color@2x.png');
+        background-size: 36px 36px;
+      }
+    }
+
+    .pint {
+      &:before{
+        background: url('../img/Pinterest@2x.png');
+        background-size: 36px 36px;
+      }
+      &:hover:before{
+        background: url('../img/Pinterest_Color@2x.png');
+        background-size: 36px 36px;
+      }
+    }
+
+    .youtube {
+      &:before{
+        background: url('../img/Youtube@2x.png');
+        background-size: 36px 36px;
+      }
+      &:hover:before{
+        background: url('../img/Youtube_Color@2x.png');
+        background-size: 36px 36px;
+      }
+    }
+
+    .fb {
+      &:before{
+        background: url('../img/Facebook@2x.png');
+        background-size: 36px 36px;
+      }
+      &:hover:before{
+        background: url('../img/Facebook_Color@2x.png');
+        background-size: 36px 36px;
+      }
+    }
+
+    .gplus {
+      &:before{
+        background: url('../img/Gplus@2x.png');
+        background-size: 36px 36px;
+      }
+      &:hover:before{
+        background: url('../img/Gplus_Color@2x.png');
+        background-size: 36px 36px;
+      }
+    }
+
+    .insta {
+      &:before{
+        background: url('../img/Facebook@2x.png');
+        background-size: 36px 36px;
+      }
+      &:hover:before{
+        background: url('../img/Facebook_Color@2x.png');
+        background-size: 36px 36px;
+      }
+    }
+
+    .loc {
+      &:before{
+        background: url('../img/location_contacts@2x.png');
+        background-size: 14px 14px;
+      }
+    }
+
+    .mob-search {
+      &:before{
+        background: url('../img/search_mobile@2x.png');
+        background-size: 14px 14px;
+      }
+    }
+
+    .mob-menu {
+      &:before{
+        background: url('../img/burger_menu.png');
+        background-size: 20px 20px;
+      }
+    }
+}
+
+
+

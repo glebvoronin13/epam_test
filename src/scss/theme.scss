@@ -1,0 +1,107 @@
+.logo-block a {
+	color: $nav-text-color;
+}
+
+.navbar {
+	background: $main-color;
+}
+
+ul.menu li a {
+	color: $nav-text-color;
+}
+
+ul.menu {
+	li > input.search {
+		color: $search-color;
+	}
+}
+
+.article {
+	.title {
+		padding: 10px;
+		a {
+			color: $main-color;
+		}
+		
+	}
+}
+
+.footer {
+	background: $footer-bg-color;
+	color: $footer-text-color;
+	a {
+		color: $main-color;
+	}
+}
+
+.foot-col {
+	h2 {
+		font-size: 14px;
+		color: $footer-title-color;
+	}
+}
+
+.overlay {
+	background-color: rgba(65, 152, 210, 0.5);
+}
+
+.popup {
+	font-size: 14px;
+	background-color: #FFFFFF;
+}
+
+.popup-head {
+	background: $popup-head-bg;
+}
+
+.popup-content {
+	h2 {
+		color: $footer-title-color;
+	}
+	div.detailed-img { 
+		float: left;
+		padding: 5px 10px 10px 5px;
+		display: block;
+		height: 282px;
+		width: 281px;
+		overflow: hidden;
+	}
+	p {
+		font-size: 16px;
+		color: $footer-title-color;
+	}
+}
+
+.next-page {
+	button {
+		font-size: 24px;
+		background: $popup-head-bg;
+		color: $nav-text-color;
+		border: 0;
+		border-radius: 5px;
+		&:hover {
+			background: $main-color;
+		}
+	}
+}
+
+.offcanvas-overlay {
+	background-color: rgba(65, 152, 210, 0.5);
+}
+
+.offcanvas-body {
+	font-size: 14px;
+	border: 0;
+	background-color: $popup-head-bg;
+	color: $nav-text-color;
+}
+
+ul.offcanvas-menu li a {
+	font-size: 14px;
+	line-height: 20px;
+	color: $nav-text-color;
+}
+
+.mob-sr-field {
+	background: $popup-head-bg;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+	<title></title>
+	<meta charset = "UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<script src="js/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="wrapper">
+
+	<nav class="navbar">
+		<div class="container">
+			<div class="logo-block">
+				<a href="/">
+					<img class="h-s" src="img/logo.png" alt="">
+					<img class="s-s" src="img/Logo_mobile.png" alt="">
+					<span>IT News Hub</span>
+				</a>
+			</div>
+			<div class="nav-mobile s-s">
+				<a onclick="news.showMSearch();"><i class="mob-search"></i></a>
+				<a onclick="news.openOffcanvas();"><i class="mob-menu"></i></a>
+			</div>	
+			<div class="nav-block h-s">
+				<ul class="menu">
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">News hub</a>
+				</li>
+				<li>
+					<a href="#">Contacts</a>
+				</li>
+			</ul>
+			</div>
+			<div class="search-block h-s">
+				<form>
+					<input class="search" type="search" name="search" placeholder="Search">
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div id="js-mob-search" class="mob-sr-field s-s">
+		<form>
+			<input class="search" type="search" name="search" placeholder="Search">
+		</form>
+	</div>
+	<section>
+
+		<div class="container">
+			<div class="news-grid" id="js-news">
+			
+			</div>
+			<div id="js-loading" class="loading">
+				
+			</div>
+			<div id="js-next-page" class="next-page">
+				<button onclick="news.nextPage();">Load more</button>
+			</div>
+			<div class="clr"></div>			
+		</div>
+	</section>
+	<div class="footer">
+		<div class="container">
+			<div class="foot-grid">
+				<div class="foot-col social-col">
+					<h2>Social activity</h2>
+					<ul class="social">
+						<li class="soc-item"><a href="#"><i class="twitter"></i></a></li>
+						<li class="soc-item"><a href="#"><i class="pint"></i></a></li>
+						<li class="soc-item"><a href="#"><i class="youtube"></i></a></li>
+						<li class="soc-item"><a href="#"><i class="fb"></i></a></li>
+						<li class="soc-item"><a href="#"><i class="gplus"></i></a></li>
+						<li class="soc-item"><a href="#"><i class="twitter"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h2>Helpful links</h2>
+					<ul class="hlinks">
+						<li><a href="">Ceas quis nulla com</a></li>
+						<li><a href="">Vestibullum rutrum</a></li>
+						<li><a href="">Lorem ipsum dolor</a></li>
+						<li><a href="">Vestibullum rutrum</a></li>
+						<li><a href="">Ceas quis nulla com</a></li>
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h2>Success steps</h2>
+					<ol class="steps">
+						<li>Kogi Cosby Sweater.</li>
+						<li>Retro occupy org.</li>
+						<li>Keytar McSweeney.</li>
+						<li>Keytar McSweeney's.</li>
+						<li>Keytar McSweeney.</li>
+					</ol>
+				</div>
+				<div class="foot-col">
+					<h2>Contacts</h2>
+					<ul class="contacts">
+						<li><i class="loc"></i>  Glendale, Ohio</li>
+						<li><a href="mailto:juan.kelly@example.com">juan.kelly@example.com</a></li>
+						<li>(509)-639-5488</li>
+						<li>(421)-424-1542</li>
+						<li>Juan Kelly</li>
+					</ul>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="js-news-popup">
+	</div>
+	<div id="js-offcanvas" class="offcanvas s-s">
+		<div class="offcanvas-overlay" onclick="news.closeOffcanvas();"></div>
+		<div class="offcanvas-body">
+			<ul class="offcanvas-menu">
+				<li><a href="#">About</a></li>
+				<li><a href="#">news hub</a></li>
+				<li><a href="#">contacts</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+  
+</body>
+</html>

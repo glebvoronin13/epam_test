@@ -1,0 +1,90 @@
+.wrapper {
+	
+}
+
+.navbar {
+	height: 60px;
+	width: 100%;
+	.container {
+		height: 60px;
+		line-height: 60px;
+	}
+}
+
+.nav-block {
+	float:right; 
+	width:20%;
+	min-width: 250px;
+}
+
+.search-block {
+	float:right; 
+	width:40%; 
+	max-width:666px; 
+}
+
+.content {
+
+}
+
+.logo-block {
+	width:20%; 
+	float:left; 
+	min-width:200px;
+	a {
+		color: $nav-text-color;
+	}
+	a img {
+		display: inline-block;
+		vertical-align: text-top;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.news-grid {
+	margin-left: -30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.foot-grid {
+	margin-left: -30px;
+}
+
+.footer {
+	padding: 35px 0;
+	margin-top:30px;
+	width: 100%;
+	min-height: 100px;
+	background: $footer-bg-color;
+	color: $footer-text-color;
+	a {
+		color: $main-color;
+	}
+	
+	ol {
+		list-style: decimal;
+	}
+
+	ul,ol {
+		padding-top: 20px;
+		li {
+			font-size: 11px;
+			line-height: 19px;
+		}
+	}
+}
+
+ol.steps {
+	padding-left: 16px
+}
