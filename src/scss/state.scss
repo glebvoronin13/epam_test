@@ -79,6 +79,47 @@
       width: 20px;
     }
   }
+
+  .popup {
+    top: 40px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+  }
+
+  .popup-head {
+    width: 100%;
+    height: 40px;
+    background: $popup-head-bg;
+    .close {
+      top:13px;
+    }
+  }
+
+  .popup-content {
+    padding: 10px;
+    h2 {
+      font-size: 24px;
+      color: $footer-title-color;
+      padding: 10px;
+    }
+    div.detailed-img { 
+      float: none!important;
+      clear: both;
+      margin: 0 auto;
+      img {
+            min-width: 281px;
+            min-height: 282px;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: $footer-title-color;
+      padding: 10px;
+    }
+  }
+
   div.mob-sr-field > form > input.search {
       max-width: 225px;
   }
@@ -104,6 +145,11 @@
   }
 }
 
+.scrl-lock {
+  overflow: hidden;
+}
+
+/* RETINA */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -121,87 +167,87 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
     .twitter {
       &:before{
-        background: url('../img/Twitter@2x.png');
+        background: url('../img/Twitter@2x.png') no-repeat;
         background-size: 36px 36px;
       }
       &:hover:before{
-        background: url('../img/Twitter_Color@2x.png');
+        background: url('../img/Twitter_Color@2x.png') no-repeat;
         background-size: 36px 36px;
       }
     }
 
     .pint {
       &:before{
-        background: url('../img/Pinterest@2x.png');
+        background: url('../img/Pinterest@2x.png') no-repeat;
         background-size: 36px 36px;
       }
       &:hover:before{
-        background: url('../img/Pinterest_Color@2x.png');
+        background: url('../img/Pinterest_Color@2x.png') no-repeat;
         background-size: 36px 36px;
       }
     }
 
     .youtube {
       &:before{
-        background: url('../img/Youtube@2x.png');
+        background: url('../img/Youtube@2x.png') no-repeat;
         background-size: 36px 36px;
       }
       &:hover:before{
-        background: url('../img/Youtube_Color@2x.png');
+        background: url('../img/Youtube_Color@2x.png') no-repeat;
         background-size: 36px 36px;
       }
     }
 
     .fb {
       &:before{
-        background: url('../img/Facebook@2x.png');
+        background: url('../img/Facebook@2x.png') no-repeat;
         background-size: 36px 36px;
       }
       &:hover:before{
-        background: url('../img/Facebook_Color@2x.png');
+        background: url('../img/Facebook_Color@2x.png') no-repeat;
         background-size: 36px 36px;
       }
     }
 
     .gplus {
       &:before{
-        background: url('../img/Gplus@2x.png');
+        background: url('../img/Gplus@2x.png') no-repeat;
         background-size: 36px 36px;
       }
       &:hover:before{
-        background: url('../img/Gplus_Color@2x.png');
+        background: url('../img/Gplus_Color@2x.png') no-repeat;
         background-size: 36px 36px;
       }
     }
 
     .insta {
       &:before{
-        background: url('../img/Facebook@2x.png');
+        background: url('../img/Facebook@2x.png') no-repeat;
         background-size: 36px 36px;
       }
       &:hover:before{
-        background: url('../img/Facebook_Color@2x.png');
+        background: url('../img/Facebook_Color@2x.png') no-repeat;
         background-size: 36px 36px;
       }
     }
 
     .loc {
       &:before{
-        background: url('../img/location_contacts@2x.png');
+        background: url('../img/location_contacts@2x.png') no-repeat;
         background-size: 14px 14px;
       }
     }
 
     .mob-search {
       &:before{
-        background: url('../img/search_mobile@2x.png');
-        background-size: 14px 14px;
+        background: url('../img/search_mobile@2x.png') no-repeat;
+        background-size: 20px 20px;
       }
     }
 
     .mob-menu {
       &:before{
-        background: url('../img/burger_menu.png');
+        background: url('../img/burger_menu@2x.png') no-repeat;
         background-size: 20px 20px;
       }
     }

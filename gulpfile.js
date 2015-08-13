@@ -24,7 +24,7 @@ gulp.task('css', function () {
   gulp.src('src/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix('last 5 versions', '> 1%', 'ie 9'))
-    .pipe(rename('style.min.css'))
+    .pipe(rename('style.css'))
     .pipe(gulp.dest('build/css/'))
     .pipe(notify('Done'))
     .pipe(connect.reload());

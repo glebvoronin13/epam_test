@@ -31,7 +31,7 @@ var news = {
 			ind,
 			tmp_title, tmp_img, tmp_text, tmp_haspic;
 			if (rawdata.response.docs.length == 0) {
-				console.log ('LOL'); 
+				alert("No articles found or connection error"); 
 			} else {
 				for (i; i<=end; i++) {
 					if (rawdata.response.docs[doc].headline.name) {
@@ -58,7 +58,8 @@ var news = {
 				this.renderPage(page);
 			}
 		} else {
-			console.log('FATAL ERROR');
+			//console.log('FATAL ERROR');
+			alert('Sorry, no data recieved');
 		}
 	},
 	addArticle : function (id, heading, img, content) {
@@ -99,8 +100,10 @@ var news = {
 		this.init(this.data.page);
 	},
 	closeDetails : function() {
-		var popup;
+		var popup, lock;
 		popup = document.getElementById("js-news-popup");
+		lock = document.getElementById("js-lock-scr");
+		lock.className = "";
 		popup.style.opacity = '0';
 		popup.style.visibility = 'hidden';
 		popup.innerHTML = "";
@@ -130,6 +133,8 @@ var news = {
 		block_pop.appendChild(popup);
 		block_pop.style.visibility = 'visible';
 		block_pop.style.opacity = '1';
+		lock = document.getElementById("js-lock-scr");
+		lock.className = "scrl-lock";
 		 document.onkeydown = function(evt) {
 		    evt = evt || window.event;
 		    if (evt.keyCode == 27) { news.closeDetails(); }
